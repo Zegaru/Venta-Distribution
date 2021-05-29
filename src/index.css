@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+
+@font-face {
+  font-family: Journalism;
+  font-weight: 400;
+  src: url(./resources/fonts/Journalism.ttf);
+}
+@font-face {
+  font-family: Lg;
+  font-weight: 400;
+  src: url(./resources/fonts/Lg.ttf);
+}
+@font-face {
+  font-family: ProximaNova;
+  font-weight: 700;
+  src: url(./resources/fonts/ProximaNova-Bold.ttf);
+}
+@font-face {
+  font-family: ProximaNova;
+  font-weight: 600;
+  src: url(./resources/fonts/ProximaNova-SemiBold.ttf);
+}
+@font-face {
+  font-family: ProximaNova;
+  font-weight: 300;
+  src: url(./resources/fonts/ProximaNova-Light.ttf);
+}
+@font-face {
+  font-family: ProximaNova;
+  font-weight: 400;
+  src: url(./resources/fonts/ProximaNova-Regular.ttf);
+}
+
+.inp-border-primary {
+  @apply border-gray-300 focus:ring-primary-light focus:border-primary-light;
+}
+
+.inp-border-red {
+  @apply border-red-300 focus:ring-red-500 focus:border-red-500;
+}
+
+.inp-base {
+  @apply appearance-none block w-full px-4 py-3 border border-gray-300 rounded-xl shadow-sm placeholder-gray-400 focus:outline-none focus:ring-primary focus:border-primary sm:text-lg font-light;
+}
+
+@tailwind utilities;
